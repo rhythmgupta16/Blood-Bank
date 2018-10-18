@@ -1,0 +1,89 @@
+<html>
+<body>
+<style>
+body {
+    
+    background:url(Background.jpeg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+</style>
+<div style="width:95%">
+<font size=4><a href="mainframe.html">HOME</a></font>
+<center><font size=7><b>Contact Us</b></font></center>
+<br>
+<script>
+  function checkrequestdetails()
+  {
+  if(document.request.FirstName.value=="")
+  {
+  alert("Please enter Full Name");
+  return false;
+  }
+  if(document.request.Email.value=="")
+  {
+  alert("Please enter an Email");
+  return false;
+  }
+  if(document.request.mobileno.value=="")
+  {
+  alert("Please enter Mobile Number");  
+  return false;
+  }
+ if(document.request.Query.value=="")
+  {
+  alert("Please enter a Query");
+  return false;
+  }
+  return true;
+}
+  </script>
+<div style="width:87%">
+<form name="request"  onsubmit="checkrequestdetails()">
+<fieldset>
+<br>
+Full name<font color="red">*</font>&emsp;&emsp;&emsp;<input type="text" name="FirstName">
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email ID<font color="red">*</font>&emsp;&emsp;&emsp; <input type="text" name="Email"><br><br>
+Mobile no.<font color="red">*</font>&emsp;&emsp;&emsp;<input type="text" name="mobileno">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Query<font color="red">*</font>&emsp;&emsp;&emsp;&emsp;<input type="text" height="20px" name="Query" >
+<br><br>
+city:&emsp;&emsp;&emsp;&emsp;&emsp;
+<select style="border-radius:4px; width: 200px; padding: 6px 10px;  margin: 4px 0; border:1" name="city">
+  <option value="Mumbai">Mumbai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Ahemadabad">Ahemadabad</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="Surat">Surat</option>
+  <option value="Pune">Pune</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Lucknow">Lucknow</option>
+  <option value="Kanpur">Kanpur</option>
+  <option value="Nagpur">Nagpur</option>
+  <option value="Indore">Indore</option> 
+  <option value="Thane">Thane</option>
+  <option value="Bhopal">Bhopal</option>
+  <option value="Visakhapatnam">Visakhapatnam</option>
+  <option value="Patna">Patna</option>
+  <option value="Vadodara">Vadodara</option>
+  <option value="Ghaziabad">Ghaziabad</option>
+  <option value="Ludhiana">Ludhiana</option>  
+  <option value="Agra">Agra</option>
+  <option value="Nashik">Nashik</option>
+  <option value="Faridabad">Faridabad</option>
+  <option value="Meerut">Meerut</option>
+  <option value="Rajkot">Rajkot</option>
+  <option value="Varanasi">Varanasi</option>
+</select><br>
+</fieldset><br>
+<center><input type="submit" value="Send" style="border-radius:4px;padding: 16px 26px;margin: 4px 2px;cursor: pointer;border: none; background-color:black;color: white;"></center>
+</form>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="330.jpg" alt="blood" style="width:800px;height:230px;">
+</div>
+</html>

@@ -1,0 +1,178 @@
+<html>
+<head>
+</head>
+<body>
+
+<style>
+body{
+background-image: url("Background.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+
+  <script>
+  function checkregisterdetails()
+  {
+  if(document.register.textnames.value=="")
+  {
+  alert("Please enter a name");
+  return false;
+  }
+  if(document.register.selgroup.value=="Select")
+  {
+  alert("Please select Blood Group");
+  return false;
+  }
+  
+  if(document.register.mobileno.value=="")
+  {
+  alert("Please enter your mobile number");
+  return false;
+  }
+  return true;
+  }
+  </script>
+  
+
+  
+<form name="register" onsubmit="return checkregisterdetails()">
+
+<span style="display:inline-block; width: 1375px;"></span><font size=5><a href="mainframe.html">Home</a></font>
+<center><font size=7 color="orange"><b>Register As Donor</b></font></center>
+
+<br><br>
+<div style="width:87%">
+<fieldset style="border-radius:4px;">
+<legend><font size=4 color="red">Personal Information:</font></legend>
+<br>
+
+<font size=3.8>
+
+Name<font color="red">*</font> &emsp;&nbsp;&emsp;&emsp;&nbsp;
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="textnames" id="textname" size="30">
+
+<span style="display:inline-block; width: 500px;"></span>
+
+Father Name &emsp;&emsp;&nbsp;
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="fathername" id="fathername"
+size="30">
+
+<br><br>
+Date Of Birth &emsp;
+<input style="border: 1px solid black;border-radius:4px;" type="datetime-local" name="dob" >
+
+<span style="display:inline-block; width: 510px;"></span>
+
+Blood Group<font color="red">*</font> &emsp;&emsp;&emsp;
+
+<select  name="selgroup" style="border: 1px solid black;border-radius:4px;" width="30">
+<option value="Select" selected>Select..</option>
+  <option value="A+">A+</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B-">B-</option>
+  <option value="O+">O+</option>
+  <option value="O-">O-</option>
+  <option value="AB+">AB+</option>
+  <option value="AB-">AB-</option></select>
+
+
+<br><br>
+
+Sex: &emsp;&emsp;&emsp;&emsp;&nbsp;
+<input style="border: 1px solid black;border-radius:4px;" type="radio" name="sex" value="male" size="10">Male
+<input style="border: 1px solid black;border-radius:4px;" type="radio" name="sex" value="Female" size="10">Female
+
+<span style="display:inline-block; width: 607px;"></span>
+
+Weight(Kg) &emsp;&emsp;&emsp;
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="weight"
+id="weight" size="30">
+<br><br>
+</fieldset>
+
+<br><br>
+
+<fieldset style="border-radius:4px;"v>
+<legend><font size=4 color="red">Contact Information:</font></legend>
+<br>
+
+Address &emsp;&emsp;&emsp;
+<input style="border:1px solid black;border-radius:4px;" type="text" name="Address"
+id="Address" size="30" >
+
+<br><br>
+
+
+City &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+
+
+<select style="border: 1px solid black;border-radius:4px;"><option value="-1" selected>select..</option>
+  <option value="Agra">Agra</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Amritsar">Amritsar</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Faridabad">Faridabad</option>
+  <option value="Gandhinagar">Gandhinagar</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Haridwar">Haridwar</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Lucknow">Lucknow</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Jammu">Jammu</option>
+  <option value="Nagpur">Nagpur</option> 
+  <option value="Pathankot">Pathankot</option>
+  <option value="Patiala">Patiala</option>
+  <option value="Raipur">Raipur</option>
+  <option value="Solan">Solan</option>
+  <option value="Sonipat">Sonipat</option>
+  <option value="Srinagar">Srinagar</option>
+  <option value="Varanasi">Varanasi</option>  
+  <option value="Vellore">Vellore</option>
+  <option value="Visakhapatnam">Visakhapatnam</option>
+
+</select><br><br>
+
+
+
+
+
+
+PinCode &emsp;&emsp;&nbsp;&nbsp&nbsp;
+<input  style="border: 1px solid black;border-radius:4px;" type="text" name="pincode" id="pincode" size="30">
+
+<br><br>
+
+EmailId &emsp;&emsp;&emsp;
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="emailid" id="emailid" size="30">
+<br><br>
+
+
+
+
+
+MobileNo<font color="red">*</font> &emsp;&nbsp;&nbsp;
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="mobileno" id="mobileno" size="30">
+<br><br>
+
+
+
+Any Disease(s)  
+<input style="border: 1px solid black;border-radius:4px;" type="text" name="any diseases" id="any diseases" size="30" >
+
+</font>
+<br><br>
+</fieldset>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="reset" style="border-radius:4px;padding: 16px 26px;margin: 4px 2px;cursor: pointer;border: none; background-color:black;color: white;">  &emsp;&emsp;  <input type="submit" value="Submit Form" style="border-radius:4px;padding: 16px 26px;margin: 4px 2px;cursor: pointer;border: none; background-color:black;color: white;" />
+
+
+</form>
+
+
+</body>
+</html>

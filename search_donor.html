@@ -1,0 +1,115 @@
+<html>
+<head><title>Search Donors</title>
+<script>
+	function validate()
+	{
+		var bg=document.myform.selbg.value;
+		var cy=document.myform.city.value;
+		var cb=document.myform.terms.checked;
+		var out='';
+		var flag=0;
+		if (bg=="-1")
+		{
+			out=out+"\n Enter a blood group \n";
+			flag=1;
+		}
+		if (cy=="-1")
+		{
+			out=out+"\n Enter a city \n";
+			flag=1;
+		}
+		if (!cb)
+		{
+			out=out+"\n Please accept our terms and conditions \n";
+			flag=1;
+		}
+		if (flag)
+		{
+			alert(out);
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+		
+		
+	}
+</script>
+</head>
+<body>
+<style>
+body{
+background-image: url("Background.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#example1 {
+    border: 1px solid black;
+    padding:15px;
+}
+</style>
+<div id="example1" style="width:83%">
+<span style="display:inline-block; width: 1375px;"></span><font size=5><a href="mainframe.html">Home</a></font>
+<center><font size=7><b><u>Search Donors</u></b></font></center><br>
+<form name="myform" onsubmit="return validate()">
+<fieldset>
+<legend><font size=4 >Blood And City Information</font></legend>
+<font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></font>
+  &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+<b>Blood Group:</b> &emsp;&emsp;
+<select value="select" style="border-radius:4px;;width:200px; padding: 6px 10px;  margin: 4px 0; border:1;" name="selbg">
+<option value="-1" selected>select..</option> 
+ <option value="A+">A+</option>
+  <option value="B+">B+</option>
+  <option value="O+">O+</option>
+  <option value="A-">A-</option>
+  <option value="AB+">AB+</option>
+  <option value="AB-">AB-</option>
+  <option value="A">A</option>
+</select>
+&emsp;&emsp;&emsp;&emsp;
+
+<b>City:</b> &emsp;&emsp;
+ <select style="border-radius:4px; width: 200px; padding: 6px 10px;  margin: 4px 0; border:1" name="city">
+<option value="-1" selected>select..</option>  
+<option value="Agra">Agra</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Amritsar">Amritsar</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Faridabad">Faridabad</option>
+  <option value="Gandhinagar">Gandhinagar</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Haridwar">Haridwar</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Lucknow">Lucknow</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Jammu">Jammu</option>
+  <option value="Nagpur">Nagpur</option> 
+  <option value="Pathankot">Pathankot</option>
+  <option value="Patiala">Patiala</option>
+  <option value="Raipur">Raipur</option>
+  <option value="Solan">Solan</option>
+  <option value="Sonipat">Sonipat</option>
+  <option value="Srinagar">Srinagar</option>
+  <option value="Varanasi">Varanasi</option>  
+  <option value="Vellore">Vellore</option>
+  <option value="Visakhapatnam">Visakhapatnam</option>
+</select><br><br>
+ &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+<input type="checkbox" name="terms" > <b>I have read and agree to abide by the <u>terms and conditions.<u></b><br><br>
+</fieldset><center><input type="submit" value="Submit" style="border-radius:4px;padding: 16px 26px;margin: 4px 2px;cursor: pointer;border: none; background-color:black;color: white;"></center>
+
+</form>
+<br>
+
+<img src="331.jpg" alt="blood" style="width:49%;height:200px;">
+<img src="229.jpg" alt="blood" style="width:49%;height:200px;">
+</div>
+</body>
+</html>
